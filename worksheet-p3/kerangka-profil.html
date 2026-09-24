@@ -21,23 +21,79 @@
     <section id="bagian-1">
       <h2>Jadwal Olahraga</h2>
       
-      <!-- TODO: Lembar D - Tambahkan Tabel Data di sini -->
+      <!-- Lembar D - Tabel Data -->
+      <table>
+        <caption>Rencana Latihan dan Target Kalori Mingguan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Hari</th>
+            <th scope="col">Jenis Olahraga</th>
+            <th scope="col">Durasi (menit)</th>
+            <th scope="col">Target Kalori</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Senin</th>
+            <td>Lari Pagi</td>
+            <td>30</td>
+            <td>300 kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">Rabu</th>
+            <td>Renang</td>
+            <td>45</td>
+            <td>400 kcal</td>
+          </tr>
+          <tr>
+            <th scope="row">Jumat</th>
+            <td>Latihan Beban</td>
+            <td>60</td>
+            <td>350 kcal</td>
+          </tr>
+        </tbody>
+      </table>
       
-      <!-- TODO: Lembar D - Tambahkan Gambar dengan <figure> dan <figcaption> di sini -->
+      <!-- Lembar D - Gambar dengan <figure> dan <figcaption> -->
+      <figure>
+        <img src="aktivitas-olahraga.webp" 
+             alt="Seseorang sedang mengikat tali sepatu olahraga sebelum memulai lari pagi di lintasan." 
+             width="640" 
+             height="360" 
+             loading="lazy">
+        <figcaption>Persiapan sebelum memulai sesi latihan pagi.</figcaption>
+      </figure>
 
     </section>
 
     <section id="bagian-2">
       <h2>Catat Latihan</h2>
 
-      <!-- TODO: Lembar E - Tambahkan Form di sini -->
+      <!-- Lembar E - Form -->
+      <form action="/simpan" method="post">
+        <p>
+          <label for="jenis-olahraga">Jenis Olahraga:</label>
+          <input type="text" id="jenis-olahraga" name="jenis-olahraga" required>
+        </p>
+
+        <p>
+          <label for="tanggal-latihan">Tanggal Latihan:</label>
+          <input type="date" id="tanggal-latihan" name="tanggal-latihan" required>
+        </p>
+
+        <p>
+          <label for="durasi-latihan">Durasi (menit):</label>
+          <input type="number" id="durasi-latihan" name="durasi-latihan" min="1" max="300" required>
+        </p>
+
+        <button type="submit">Simpan</button>
+      </form>
 
     </section>
   </main>
 
   <footer>
-    <p>Irsyad Faiz Zaki · 25523128 · 2025
-    </p>
+    <p>Irsyad Faiz Zaki · 25523128 · 2026</p>
   </footer>
 
 </body>
