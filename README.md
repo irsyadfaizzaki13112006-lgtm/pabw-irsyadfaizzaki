@@ -31,3 +31,25 @@ Kriteria selesai saya: Mengubah `--color-primary` di satu baris di `tokens.css` 
 
 ## Catatan penggunaan AI
 Seluruh berkas CSS dibangun secara mandiri dengan bantuan AI sebagai panduan penyusunan design token dua lapis, flexbox layout, dan pengalih tema gelap berbasis `:has()`.
+
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+Pengaturan tata letak halaman profil ditingkatkan menggunakan perpaduan CSS Grid dan Flexbox.
+
+### Rencana Kerangka Halaman
+- **Kerangka Utama (Grid):** `grid-template-rows: auto 1fr auto;` dengan `min-height: 100dvh;`
+- **Area Isi (Grid 2 Kolom):** `grid-template-columns: 16rem 1fr;` (sidebar tetap, konten lentur)
+- **Navbar (Flexbox):** `display: flex; gap: var(--space-4); align-items: center;`
+- **Katalog / Galeri Kartu (Grid Adaptif):** `grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));`
+- **Isi Kartu / Tombol (Flexbox):** `display: flex; align-items: center; justify-content: space-between;`
+
+### Kapan Flex, Kapan Grid
+| Bagian | Pilihan | Alasan |
+|---|---|---|
+| Kepala Halaman (Header/Navbar) | Flexbox | Menyusun menu dan judul dalam satu baris horizontal secara seimbang |
+| Isi Dua Kolom (Main Container) | Grid | Membagi dua area utama (sidebar & konten) dalam 2 dimensi |
+| Galeri / Katalog Kartu | Grid | Membentuk grid kartu adaptif tanpa media query menggunakan `auto-fit` |
+| Isi di dalam Kartu | Flexbox | Menyusun elemen detail kartu secara 1 dimensi (sebar rata kiri-kanan) |
+
+## Catatan penggunaan AI
+Tata letak halaman diperbarui menggunakan Flexbox dan Grid dengan bantuan AI.
