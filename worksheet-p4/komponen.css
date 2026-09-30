@@ -1,4 +1,50 @@
-/* Styling Tabel Data P3 */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+}
+
+.kartu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+  min-height: 12rem; 
+}
+
+.kartu__isi {
+  min-width: 0; 
+}
+
+.kartu__judul {
+  overflow-wrap: anywhere; 
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.kartu--sorotan {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .kartu--sorotan {
+    grid-column: span 1;
+  }
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -23,10 +69,9 @@ th, td {
 
 thead th {
   background: var(--color-primary);
-  color: var(--color-surface);
+  color: #FFFFFF;
 }
 
-/* Styling Form & Field */
 .form-kolom {
   display: flex;
   flex-direction: column;
@@ -59,13 +104,11 @@ button {
   font-weight: 600;
 }
 
-/* Keadaan Fokus */
 :focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-/* Validasi Form */
 input:user-invalid {
   border-color: var(--color-danger);
   border-width: 2px;
