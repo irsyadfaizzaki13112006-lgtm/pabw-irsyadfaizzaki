@@ -53,3 +53,15 @@ Pengaturan tata letak halaman profil ditingkatkan menggunakan perpaduan CSS Grid
 
 ## Catatan penggunaan AI
 Tata letak halaman diperbarui menggunakan Flexbox dan Grid dengan bantuan AI.
+
+## Pertemuan 6 — Responsif Mobile-First
+
+Penerapan pendekatan Mobile-First pada halaman profil dengan berkas `responsif.css`.
+
+### Strategi Responsif
+- **Dasar (Mobile < 48rem):** Tampilan 1 kolom penuh untuk semua komponen, tanpa media query.
+- **Tablet (≥ 48rem / 768px):** Galeri kartu berubah dari 1 kolom menjadi 2 kolom (`grid-template-columns: repeat(2, 1fr)`).
+- **Desktop (≥ 60rem / 960px):** Sidebar bersanding dengan konten (`grid-template-columns: 16rem 1fr`) dan galeri kartu menjadi 3 kolom.
+
+## Catatan penggunaan AI
+Pendekatan Mobile-First dan media query `min-width` disusun dengan bantuan AI sesuai instruksi Worksheet P6.
