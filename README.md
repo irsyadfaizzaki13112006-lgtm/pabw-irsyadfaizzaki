@@ -65,3 +65,16 @@ Penerapan pendekatan Mobile-First pada halaman profil dengan berkas `responsif.c
 
 ## Catatan penggunaan AI
 Pendekatan Mobile-First dan media query `min-width` disusun dengan bantuan AI sesuai instruksi Worksheet P6.
+
+## Pertemuan 8 — JavaScript Modern ES6+, Struktur Data, dan Array Methods
+
+Pemindahan isi data halaman profil menjadi variabel, objek, dan array JavaScript secara dinamis.
+
+### Ringkasan Pekerjaan
+- **Variabel & Objek:** Menampung data identitas profil (`profil`) serta daftar proyek/target olahraga (`daftarProyek`).
+- **Fungsi Murni:** `buatPerkenalan` (menyusun teks perkenalan) dan `formatKeahlian` (merapikan daftar keahlian).
+- **Array Methods:** Menggunakan `map`, `filter`, dan `find` untuk mengolah data proyek tanpa mengubah data asli.
+- **Modul JS:** Dihubungkan ke `profil.html` menggunakan `<script type="module" src="js/app.js"></script>`.
+
+## Catatan penggunaan AI
+Seluruh struktur variabel, fungsi murni, dan pengolahan array ES6+ disusun secara mandiri dengan bimbingan AI sesuai instruksi Worksheet P8.
