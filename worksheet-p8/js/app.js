@@ -46,3 +46,10 @@ const ringkasanLatihan = daftarProyek.map((proyek) => {
   return `${proyek.judul}: ${proyek.durasi} menit (${proyek.targetKalori} kcal)`;
 });
 console.log("--- RINGKASAN LATIHAN (MAP) ---", ringkasanLatihan);
+
+try {
+  const dataKosong = null;
+  console.log("Akses Aman Optional Chaining:", dataKosong?.konten ?? "Data belum tersedia");
+} catch (error) {
+  console.error("Terjadi galat:", error.message);
+}
