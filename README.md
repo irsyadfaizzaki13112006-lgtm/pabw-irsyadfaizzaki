@@ -78,3 +78,15 @@ Pemindahan isi data halaman profil menjadi variabel, objek, dan array JavaScript
 
 ## Catatan penggunaan AI
 Seluruh struktur variabel, fungsi murni, dan pengolahan array ES6+ disusun secara mandiri dengan bimbingan AI sesuai instruksi Worksheet P8.
+
+## Pertemuan 9 — DOM, Event, dan Interaktivitas
+
+Pemasangan data dinamis dari JavaScript ke elemen DOM serta penanganan event interaktif.
+
+### Fitur Interaktif
+- **Render Dinamis:** Kartu proyek dibangun dari `daftarProyek` menggunakan `createElement` dan `textContent`.
+- **Event Delegation:** Satu listener dipasang pada elemen induk (`#filter`) untuk menangani penyaringan kategori.
+- **Validasi Form:** Menangani event `submit` dengan `preventDefault()`, serta memvalidasi input per kolom secara terpisah.
+
+## Catatan penggunaan AI
+Manipulasi DOM, event delegation, dan validasi form disusun mandiri dengan bimbingan AI sesuai instruksi Worksheet P9.
