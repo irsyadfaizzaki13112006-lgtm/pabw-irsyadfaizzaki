@@ -1,38 +1,13 @@
-[
-  {
-    "id": 1,
-    "judul": "Lari Pagi 5K",
-    "kategori": "Lari",
-    "hari": "Senin",
-    "durasi": 30,
-    "targetKalori": 350,
-    "selesai": true
-  },
-  {
-    "id": 2,
-    "judul": "Renang Gaya Bebas 1000m",
-    "kategori": "Renang",
-    "hari": "Rabu",
-    "durasi": 45,
-    "targetKalori": 400,
-    "selesai": true
-  },
-  {
-    "id": 3,
-    "judul": "Latihan Beban Upper Body",
-    "kategori": "Beban",
-    "hari": "Jumat",
-    "durasi": 60,
-    "targetKalori": 300,
-    "selesai": false
-  },
-  {
-    "id": 4,
-    "judul": "Lari Interval 10K",
-    "kategori": "Lari",
-    "hari": "Sabtu",
-    "durasi": 60,
-    "targetKalori": 700,
-    "selesai": false
+const ALAMAT_API = "./olahraga.json";
+
+export async function ambilDataOlahraga() {
+  try {
+    const respons = await fetch('./olahraga.json');
+    if (!respons.ok) throw new Error('status ' + respons.status);
+    const data = await respons.json();
+    return data;
+  } catch (galat) {
+    console.error('gagal memuat', galat.message);
+    throw galat; 
   }
-]
+}
