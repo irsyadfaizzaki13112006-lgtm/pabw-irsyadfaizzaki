@@ -90,3 +90,15 @@ Pemasangan data dinamis dari JavaScript ke elemen DOM serta penanganan event int
 
 ## Catatan penggunaan AI
 Manipulasi DOM, event delegation, dan validasi form disusun mandiri dengan bimbingan AI sesuai instruksi Worksheet P9.
+
+## Pertemuan 10 — JavaScript Asinkron: fetch, Promise, dan JSON
+
+Penerapan pengambilan data asinkron dari API/JSON lokal menggunakan `fetch`, `async/await`, serta pengelolaan 4 keadaan antarmuka.
+
+### Ringkasan Fitur
+- **Lapisan Data (`js/api.js`):** Mengisolasi pemanggilan `fetch` dan pemeriksaan `respons.ok`.
+- **4 Keadaan UI:** Menangani keadaan *Memuat* (Loading), *Berhasil* (Success), *Gagal* (Error), dan *Kosong* (Empty).
+- **Pencegahan CORS / Fallback:** Menggunakan berkas JSON lokal `./olahraga.json` sebagai penyedia data publik tanpa kunci akses.
+
+## Catatan penggunaan AI
+Arsitektur API modul, async/await, dan penanganan status respons disusun secara mandiri dengan bimbingan AI sesuai instruksi Worksheet P10.
