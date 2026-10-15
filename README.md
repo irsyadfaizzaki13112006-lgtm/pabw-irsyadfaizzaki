@@ -102,3 +102,20 @@ Penerapan pengambilan data asinkron dari API/JSON lokal menggunakan `fetch`, `as
 
 ## Catatan penggunaan AI
 Arsitektur API modul, async/await, dan penanganan status respons disusun secara mandiri dengan bimbingan AI sesuai instruksi Worksheet P10.
+
+## Pertemuan 11 - Modul, State, dan Penyimpanan Klien
+
+Pemisahan kode JavaScript menjadi 5 modul terpusat, manajemen state berbasis objek, serta penyimpanan state secara persisten menggunakan `localStorage` dengan penanganan galat dan validasi versi.
+
+### Fitur Interaktif
+- **Modularisasi Berkas:** Memecah logika aplikasi menjadi 5 modul (`data.js`, `state.js`, `dom.js`, `events.js`, `app.js`) dengan impor ES6 (`type="module"`).
+- **State Terpusat:** Seluruh data dan keadaan aktif dikelola dalam satu objek `state` tanpa menyimpan status pada elemen DOM.
+- **Penyimpanan Klien:** Menyimpan preferensi pilihan pengguna ke `localStorage` menggunakan `JSON.stringify` dan `JSON.parse` yang dilengkapi nilai bawaan (`default value`).
+- **Resiliensi Simpanan:** Menangani data rusak atau perbedaan nomor skema versi menggunakan blok `try/catch` dan nomor versi `v2`.
+
+### Catatan penggunaan AI
+Pemecahan arsitektur 5 modul, perancangan skema `localStorage` dengan penanganan simpanan rusak, serta penyesuaian tata letak disusun mandiri dengan bimbingan AI.
+
+### Lingkungan Node.js
+- `node -v`: `v24.21.0`
+- `npm -v`: `11.19.0`
