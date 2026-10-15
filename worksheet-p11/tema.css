@@ -1,0 +1,39 @@
+body.gelap {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+body.gelap .banner-profil,
+body.gelap .kartu-olahraga,
+body.gelap .tabel-rencana,
+body.gelap .tombol-tema,
+body.gelap .tombol-filter {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+body.gelap .teks-banner h1,
+body.gelap .bagian-jadwal h2,
+body.gelap .bagian-rencana h3,
+body.gelap .kartu-olahraga h3 {
+  color: #60a5fa;
+}
+
+body.gelap .tombol-filter.aktif {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+body.gelap .nav-sub a {
+  color: #93c5fd;
+}
+
+body.gelap .kartu-olahraga .info-jadwal,
+body.gelap .caption-foto {
+  color: #94a3b8;
+}
+
+body.gelap .kartu-olahraga .target-kalori {
+  color: #f8fafc;
+}

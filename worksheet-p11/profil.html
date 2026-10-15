@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadwal dan Target Olahraga Saya</title>
+  
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="komponen.css" />
+  <link rel="stylesheet" href="tema.css" />
+  <link rel="stylesheet" href="responsif.css" />
+</head>
+<body>
+
+  <header class="header-utama">
+    <button id="tombol-tema" class="tombol-tema">🌙 Pengalih Tema</button>
+    <button id="tombol-reset" class="tombol-reset">🔄 Atur Ulang Pilihan</button>
+  </header>
+
+  <main class="kontainer-utama">
+    <section class="banner-profil">
+      <div class="teks-banner">
+        <h1>Jadwal & Target Olahraga</h1>
+        <nav class="nav-sub">
+          <a href="#daftar">Jadwal</a>
+          <a href="#rencana">Catat Latihan</a>
+        </nav>
+      </div>
+      <div class="pembungkus-foto">
+        <img src="aktivitas-olahraga.jpeg" alt="Persiapan sebelum latihan" class="foto-latihan" />
+        <p class="caption-foto">Persiapan sebelum memulai latihan.</p>
+      </div>
+    </section>
+
+    <section class="bagian-jadwal">
+      <h2>Jadwal Olahraga</h2>
+
+      <div class="area-filter">
+        <button class="tombol-filter aktif" data-kategori="Semua">Semua</button>
+        <button class="tombol-filter" data-kategori="Lari">Lari</button>
+        <button class="tombol-filter" data-kategori="Renang">Renang</button>
+        <button class="tombol-filter" data-kategori="Beban">Beban</button>
+      </div>
+
+      <div id="daftar" class="grid-kartu"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

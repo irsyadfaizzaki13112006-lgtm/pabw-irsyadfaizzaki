@@ -1,40 +1,42 @@
-/* Mode Gelap Otomatis Sistem */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #0F172A;
-    --color-fg: #E2E8F0;
-    --color-surface: #1E293B;
-    --color-border: #334155;
-    --color-primary: #7DA9F7;
-    --color-danger: #FF8A8A;
-    --color-focus: #FFC000;
-    --shadow-1: 0 1px 3px rgba(0, 0, 0, .45);
-  }
+body.gelap {
+  background-color: #0f172a;
+  color: #f8fafc;
 }
 
-/* Tombol Pengalih Tema Manual */
-.pengalih-tema { 
-  position: absolute; 
-  opacity: 0; 
-  pointer-events: none; 
+body.gelap .banner-profil,
+body.gelap .kartu-olahraga,
+body.gelap .tabel-rencana,
+body.gelap .tombol-tema {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
 }
 
-.tombol-tema {
-  padding: var(--space-1) var(--space-3);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  background: var(--color-surface);
-  cursor: pointer;
-  font-size: var(--text-sm);
+body.gelap .teks-banner h1,
+body.gelap .bagian-jadwal h2,
+body.gelap .bagian-rencana h3,
+body.gelap .kartu-olahraga h3 {
+  color: #60a5fa;
 }
 
-/* Override Tema Gelap Manual saat Di-check */
-:root:has(#tema:checked) {
-  --color-bg: #0F172A;
-  --color-fg: #E2E8F0;
-  --color-surface: #1E293B;
-  --color-border: #334155;
-  --color-primary: #7DA9F7;
-  --color-danger: #FF8A8A;
-  --color-focus: #FFC000;
+body.gelap .nav-sub a {
+  color: #93c5fd;
+}
+
+body.gelap .kartu-olahraga .info-jadwal,
+body.gelap .caption-foto {
+  color: #94a3b8;
+}
+
+body.gelap .kartu-olahraga .target-kalori {
+  color: #f8fafc;
+}
+
+body.gelap .tabel-rencana th,
+body.gelap .tabel-rencana td {
+  border-bottom-color: #334155;
+}
+
+body.gelap .tabel-rencana th {
+  background-color: #1e3a8a;
 }
