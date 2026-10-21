@@ -1,0 +1,61 @@
+.content,
+.isi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.grid,
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-block: var(--space-4);
+}
+
+p {
+  font-size: var(--text-md);
+  line-height: 1.6;
+}
+
+@media (min-width: 48rem) {
+  .grid,
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kartu--sorotan {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 60rem) {
+  .content,
+  .isi {
+    grid-template-columns: 16rem 1fr;
+    grid-template-areas:
+      "sisi utama"
+      "sisi bawah";
+  }
+
+  .sisi  { grid-area: sisi; }
+  .utama { grid-area: utama; }
+  .bawah { grid-area: bawah; }
+
+  .grid,
+  .galeri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
