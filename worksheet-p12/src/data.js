@@ -1,4 +1,4 @@
-export const dataAwalOlahraga = [
+export const daftarProyek = [
   {
     id: 1,
     judul: "Lari Pagi 5K",
