@@ -124,7 +124,7 @@ Pemecahan arsitektur 5 modul, perancangan skema `localStorage` dengan penanganan
 
 Migrasi halaman profil modular dari JavaScript vanilla ke framework Vue.js 3 SPA menggunakan Vite, komponen reaktif, dan pengelolaan state terpusat.
 
-### Versi Node dan NPM
+### Versi Node.js dan npm
 - **Node.js:** v24.21.0
 - **npm:** 11.19.0
 

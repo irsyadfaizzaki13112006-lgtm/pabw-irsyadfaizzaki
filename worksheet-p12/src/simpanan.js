@@ -12,7 +12,6 @@ export function simpan(nilai) {
     console.error('Gagal menyimpan ke localStorage:', err)
   }
 }
-
 export function muat() {
   try {
     const item = localStorage.getItem(KUNCI)
@@ -30,7 +29,6 @@ export function muat() {
     return null
   }
 }
-
 export function aturUlang() {
   try {
     localStorage.removeItem(KUNCI)
