@@ -116,6 +116,27 @@ Pemisahan kode JavaScript menjadi 5 modul terpusat, manajemen state berbasis obj
 ### Catatan penggunaan AI
 Pemecahan arsitektur 5 modul, perancangan skema `localStorage` dengan penanganan simpanan rusak, serta penyesuaian tata letak disusun mandiri dengan bimbingan AI.
 
-### Lingkungan Node.js
+### Versi Node.js
 - `node -v`: `v24.21.0`
 - `npm -v`: `11.19.0`
+
+## Pertemuan 12 – Build Tooling, npm, dan Framework SPA
+
+Migrasi halaman profil modular dari JavaScript vanilla ke framework Vue.js 3 SPA menggunakan Vite, komponen reaktif, dan pengelolaan state terpusat.
+
+### Versi Node dan NPM
+- **Node.js:** v24.21.0
+- **npm:** 11.19.0
+
+### Fitur dan Arsitektur
+- **Komponen Reaktif:** Halaman dipecah menjadi empat komponen (`KepalaProfil`, `TombolFilter`, `DaftarProyek`, `FormKontak`) dengan `KepalaProfil` menerima data via `props`.
+- **State Management:** Menggunakan `reactive()` pada `state.js` tanpa pemanggilan `render()` manual.
+- **Sinkronisasi localStorage:** Menggunakan `onMounted` untuk memuat data awal dan `watch` (deep) untuk menyimpan perubahan secara otomatis.
+- **Build Produksi:** Diuji menggunakan `npm run build` dan dijalankan dengan `npm run preview`.
+
+### Perbandingan Ukuran Build
+- **Sebelum Build (`npm run dev`):** ~200 kB (10–20 berkas terpisah)
+- **Sesudah Build (`npm run preview`):** ~60 kB (3–5 berkas ter-bundle & minified)
+
+## Catatan penggunaan AI
+Pengembangan struktur komponen Vue 3, konfigurasi reaktivitas state (`reactive`, `watch`, `onMounted`), penyelesaian masalah galat impor modul, serta pengujian build produksi disusun mandiri dengan bimbingan dan asistensi AI.
